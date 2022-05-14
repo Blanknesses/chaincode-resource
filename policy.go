@@ -25,11 +25,11 @@ type AO struct {
 }
 
 type AE struct {
-	CreatedTime int64  `json:"createdTime"`
-	EndTime     int64  `json:"endTime"`
+	CreatedTime string  `json:"createdTime"`
+	EndTime     string  `json:"endTime"`
 	AllowedIP   string `json:"allowedIP"`
-	RateLimit int64 `json:"rateLimit"`
-	FlowLimit int64 `json:"flowLimit"`
+	RateLimit string `json:"rateLimit"`
+	FlowLimit string `json:"flowLimit"`
 }
 
 func (p *Policy) ToBytes() []byte {
